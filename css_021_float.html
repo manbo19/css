@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /*
+        float
+        1. float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽 이동시키는 기능이다.
+        2. float이 지정된 박스는 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 떠있다.
+        */
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+
+      div.wrap p {
+        clear: both; /* float 해제 */
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수 영화배우" />
+
+      <p>
+        휴가 사이에 비대위 (구성을) 완료하라는 식의 지령이 있었단 얘기가
+        있었다"며 "나토(NATO·북대서양조약기구) 가셨을 때도 엄청나게 공격이
+        들어왔다"고 설명했다. 어떤 '공격'이 있을지에 대해서는 "어떻게든 빌미를
+        만들어서 제명 시나리오를 가동할 것 같다"며 "윤리위를 사실 오늘 열려면
+        오늘 저녁에 열 수도 있다"고 주장했다. 전날 열린 가처분 심문에서 국민의힘
+        측이 "이 전 대표는 비대위 설치로 당 대표 권한을 상실한 것이지 당헌
+        개정으로 권한을 박탈당한 게 아니다"고 강조한 점을 통해 미뤄볼 때, 자신을
+        제명할 수 있다는 주장이다.
+      </p>
+    </div>
+  </body>
+</html>
