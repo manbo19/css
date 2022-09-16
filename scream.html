@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        list-style-type: none;
+      }
+      .wrap {
+        float: left;
+        display: block;
+        /* margin: 20px; */
+      }
+      .wrap li {
+        /* list-style-type: none; */
+        float: left;
+        display: block;
+        margin: 20px;
+      }
+
+      .dayunart {
+        width: 182px;
+        height: 39px;
+        background-image: url("images/logo.gif");
+        background-repeat: no-repeat;
+      }
+
+      .search {
+        width: 500px;
+        height: 39px;
+        /* background-color: yellow; */
+        text-align: center;
+        line-height: 39px;
+      }
+
+      .menu {
+        float: right;
+        display: block;
+        width: 300px;
+        height: 39px;
+        /* background-color: green; */
+        font: 1px solid;
+        text-align: right;
+      }
+
+      .menu a {
+        margin: 5px;
+        text-decoration: none;
+        color: gray;
+        line-height: 39px;
+      }
+
+      .tab {
+        width: 1100px;
+        height: 10px;
+        text-decoration: none;
+      }
+
+      .tab_menu a {
+        width: 220px;
+        height: 39px;
+        float: left;
+        display: block;
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 39px;
+        text-decoration: none;
+      }
+
+      /* .tab_menu a:hover {
+        background-color: black;
+        color: aliceblue;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul>
+        <li class="dayunart"></li>
+        <li class="search">search<input type="search" />🔍</li>
+        <li class="menu">
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+          <a href="#">마이페이지</a>
+          <a href="#">이용안내</a>
+          <a href="#">고객센터</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab">
+      <ul>
+        <li class="tab_menu"><a href="#">상세 페이지</a></li>
+        <li class="tab_menu"><a href="#">장바구니</a></li>
+        <li class="tab_menu"><a href="#">고객 갤러리</a></li>
+        <li class="tab_menu"><a href="#">주문배송</a></li>
+        <li class="tab_menu"><a href="#">자주 하는 질문</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
